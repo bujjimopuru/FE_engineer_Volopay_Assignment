@@ -135,6 +135,63 @@ router.get('/cards', (req, res) => {
         expiry: "Aug",
         limit: 178,
         status: 'active'
+    },
+    {
+        name: 'Mookambika',
+        user_name:"Rajith",
+        budget_name: 'Miscellaneous',
+        owner_id: 7,
+        spent: {
+        value: 0,
+        currency: "SGD",
+        imgUrl:"https://i.ibb.co/P53MQx2/arrow.png"
+        },
+        available_to_spend: {
+        value: 20,
+        currency: "SGD"
+        },
+        card_type: "subscription",
+        expiry: "Aug",
+        limit: 20,
+        status: 'block'
+    },
+    {
+        name: 'Xero',
+        user_name:"Mayank",
+        budget_name: 'Software subscription',
+        owner_id: 8,
+        spent: {
+        value: 0,
+        currency: "SGD",
+        imgUrl:"https://i.ibb.co/P53MQx2/arrow.png"
+        },
+        available_to_spend: {
+        value:"50",
+        currency: "SGD"
+        },
+        card_type: "subscription",
+        expiry: "Aug",
+        limit: 50,
+        status: 'your'
+    },
+    {
+        name: 'Pandadoc',
+        user_name:"Mayank",
+        budget_name: 'Software subscription',
+        owner_id: 9,
+        spent: {
+        value: 0,
+        currency: "SGD",
+        imgUrl:"https://i.ibb.co/P53MQx2/arrow.png"
+        },
+        available_to_spend: {
+        value: 180,
+        currency: "SGD"
+        },
+        card_type: "subscription",
+        expiry: "Aug",
+        limit: 180,
+        status: 'your'
     }
 ]
     res.end(JSON.stringify(str));
